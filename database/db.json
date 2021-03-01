@@ -1,0 +1,32 @@
+{
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "Pizza Hot 2",
+      "email": "pizzahot@test.com",
+      "rating": "4.5",
+      "address": "Islamabad"
+    },
+    {
+      "name": "KFC",
+      "email": "kfc@gmail.com",
+      "address": "Islamabad",
+      "rating": "4.7",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "login": [
+    {
+      "name": "hamza",
+      "password": "admin"
+    }
+  ]
+  
+}
