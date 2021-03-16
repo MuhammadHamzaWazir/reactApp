@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Route } from "react-router-dom";
 
 import NavBarManu from "./components/NavBarManu";
-import Home from "./components/Home";
+import HomeContainers from "./containers/HomeContainer";
 import RestaurantCreate from "./components/RestaurantCreate";
 import RestaurantDetail from "./components/RestaurantDetail";
 import RestaurantList from "./components/RestaurantList";
@@ -36,7 +36,7 @@ function App() {
         {/* login */}
         <Route path="/login" render={(props) => <Login {...props} />}></Route>
         <Route exact path="/">
-          <Home />
+          <HomeContainers />
         </Route>
       </Router>
     </div>

@@ -27,11 +27,11 @@
 .App-link {
   color: #61dafb;
 }
+/* start custom css */
 .justify-content-center {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
 }
 .table {
   width: 100%;
@@ -42,6 +42,30 @@
   vertical-align: top;
   border-top: 1px solid #ddd;
 }
+.cart-wrapper {
+  width: 50%;
+  border: 1px solid;
+}
+.btn-wrapper button {
+  background-color: red;
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.item {
+  float: left;
+  display: inline-block;
+  width: 33%;
+  padding: 20px;
+
+}
+.add-to-cart img {
+  width: 100px;
+  margin-top: 20px;
+}
+/* end custom css */
+
 
 @keyframes App-logo-spin {
   from {
