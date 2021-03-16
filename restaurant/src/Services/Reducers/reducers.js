@@ -1,24 +1,30 @@
-import { ADD_TO_CART, REMOVE_TO_CART } from "../constants";
+import { ADD_TO_CART } from "../constants";
 const initialState = {
-  cartData: [],
+  cardData: [],
 };
 export default function cartItems(state = initialState, action) {
   // eslint-disable-next-line default-case
   switch (action.type) {
     case ADD_TO_CART:
+      console.warn("reducer", action);
       return {
         ...state,
-        cartData: action.data,
+        cardData: action.data,
       };
       break;
-    // eslint-disable-next-line no-duplicate-case
-    case REMOVE_TO_CART:
-      return {
-        ...state,
-        cartData: action.data,
-      };
-      break;
+
     default:
       return state;
   }
 }
+
+// eslint-disable-next-line no-duplicate-case
+
+// , REMOVE_TO_CART
+
+// case REMOVE_TO_CART:
+//     return {
+//       ...state,
+//       cardData: action.data,
+//     };
+//     break;
