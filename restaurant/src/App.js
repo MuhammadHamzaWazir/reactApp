@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 
 import NavBarManu from "./components/NavBarManu";
 import HomeContainers from "./containers/HomeContainer";
+import HeaderContainer from "./containers/HeaderContainer";
 import RestaurantCreate from "./components/RestaurantCreate";
 import RestaurantDetail from "./components/RestaurantDetail";
 import RestaurantList from "./components/RestaurantList";
@@ -35,6 +36,9 @@ function App() {
         ></Route>
         {/* login */}
         <Route path="/login" render={(props) => <Login {...props} />}></Route>
+        <Route exact path="/">
+          <HeaderContainer />
+        </Route>
         <Route exact path="/">
           <HomeContainers />
         </Route>

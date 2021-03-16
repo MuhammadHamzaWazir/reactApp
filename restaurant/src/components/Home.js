@@ -2,13 +2,9 @@
 import React, { Component } from "react";
 
 function Home(props) {
-  console.warn("home p", props);
+  console.warn("home p", props.data);
   return (
     <div>
-      <div className="add-to-cart">
-        <img src="https://www.kindpng.com/picc/m/366-3668689_transparent-shopping-cart-logo-hd-png-download.png" />
-      </div>
-      <h1>Home</h1>
       <div className="cart-wrapper">
         <div className="img-wrapper item">
           <img
