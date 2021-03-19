@@ -27,9 +27,7 @@ function App() {
         <Route path="/search">
           <RestaurantSearch />
         </Route>
-        <Route path="/details">
-          <RestaurantDetail />
-        </Route>
+
         <Route
           path="/update/:id"
           render={(props) => <RestaurantUpdate {...props} />}
